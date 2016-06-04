@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grex game system</title>
+  <link href='https://fonts.googleapis.com/css?family=Grand+Hotel|Open+Sans:300' rel='stylesheet' type='text/css'>
+  <script src="js/processing.min.js"></script>
+  <!-- <script src="//code.jquery.com/jquery-latest.js"></script> -->
+  <style type="text/css">
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  #pjs {
+    height: 100%;
+  }
+  .leyend {
+    position: fixed;
+    bottom: 10%;
+    color: #fff;
+    font-size: 60px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0 0 5px #555;
+    font-weight: 100;
+    font-family: 'Helvetica Neue', 'Open Sans', sans-serif;
+  }
+  .leyend a {
+    text-decoration: none;
+    color: #999;
+  }
+  </style>
+</head>
+<body>
+
+<script type="text/javascript">
+
+navigator.bluetooth.requestDevice({ filters: [{ services: ['battery_service'] }] })
+  .then(device => {...})
+  .catch(error => { console.log(error); });
+
+</script>
+</body>
+</html>
